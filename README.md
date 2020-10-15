@@ -1,7 +1,7 @@
 # Java
 This repository contains some code examples written by Java. This includes all my code in FPT University.
 
-## you will find in this repo:
+## You will find in this repo:
 - [LAB211] OOP Java Lab
    - Java console program to manage a Fruit Shop
    - Bubble sort algorithm
