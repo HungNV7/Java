@@ -1,0 +1,205 @@
+21/Oct/2020 15:52:59,650- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application
+21/Oct/2020 15:59:24,838- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /register.jsp at line 48
+
+45:                         <div class="form-group">
+46:                             <label>UserID</label>
+47:                             <input type="text" class="form-control"placeholder="Enter userID" name="txtUserID"/>
+48:                             <c:if test="${not empty sessionScope.ERROR_REGISTER.errorEmail}">
+49:                                 <font color="red"><small>${sessionScope.ERROR_REGISTER.errorEmail}</small></font> 
+50:                                 </c:if>
+51:                         </div> 
+
+
+Stacktrace:
+21/Oct/2020 16:01:33,619- ERROR UserDAO: addNew: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '1'.
+26/Oct/2020 17:29:00,028- ERROR HotelDAO: CheckUserID: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '{'.
+26/Oct/2020 17:30:11,155- ERROR HotelDAO: CheckUserID: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '{'.
+26/Oct/2020 17:33:06,354- ERROR HotelDAO: getListSearch: com.microsoft.sqlserver.jdbc.SQLServerException: com.microsoft.sqlserver.jdbc.SQLServerException: Parameter Date was not defined for stored procedure .
+26/Oct/2020 17:34:46,548- ERROR HotelDAO: getListSearch: java.lang.NullPointerException
+26/Oct/2020 17:38:18,706- ERROR HotelDAO: getListSearch: java.lang.NullPointerException
+26/Oct/2020 18:53:37,951- ERROR RoomDAO: getList: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near the keyword 'ASC'.
+27/Oct/2020 17:04:00,288- ERROR SearchServlet: java.lang.IllegalArgumentException
+27/Oct/2020 18:10:43,926- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /cart.jsp at line 92
+
+89:                 </div>
+90:             </c:if>
+91:             <c:remove var="CHECKOUT_SUCCESS" scope="session"></c:remove>
+92:             <c:if test="${sessionScope.CART != null && sessionScope.CART.cart.size() != 0}">
+93:                 <table class="table table-striped">
+94:                     <thead>
+95:                         <tr>               
+
+
+Stacktrace:
+27/Oct/2020 19:16:09,951- ERROR AddServlet: java.lang.NullPointerException
+27/Oct/2020 19:17:50,996- ERROR AddServlet: java.lang.NullPointerException
+27/Oct/2020 19:20:08,161- ERROR AddServlet: java.lang.NullPointerException
+27/Oct/2020 19:42:12,843- ERROR SearchServlet: java.lang.IllegalArgumentException
+28/Oct/2020 11:19:55,808- ERROR RemoveServlet: java.lang.NullPointerException
+28/Oct/2020 16:00:52,310- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:01:35,521- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:02:38,823- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:03:26,800- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:05:14,591- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:05:39,336- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:06:54,542- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:07:12,704- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:08:12,451- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:16:14,912- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:21:35,917- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:22:15,023- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:26:08,030- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:27:31,064- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:28:00,706- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:28:47,217- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 16:29:05,573- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 17:25:01,859- ERROR UserDAO: CheckLogin: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'status'.
+28/Oct/2020 17:25:06,341- ERROR UserDAO: CheckLogin: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'status'.
+28/Oct/2020 17:25:14,445- ERROR UserDAO: CheckLogin: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'status'.
+28/Oct/2020 18:00:14,923- ERROR CartDAO: addOrder(): com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'status'.
+28/Oct/2020 18:00:14,960- ERROR RoomDAO: addOrder(): com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting from a character string to uniqueidentifier.
+28/Oct/2020 18:03:25,722- ERROR DispatcherFilter: Error in DispatcherFilter: java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+28/Oct/2020 18:07:41,337- ERROR SearchServlet: java.lang.IllegalArgumentException
+28/Oct/2020 20:05:38,312- ERROR CartDAO: getHistory(): java.lang.NullPointerException
+28/Oct/2020 20:05:38,450- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 102
+
+99:                 </div>
+100:             </form>
+101:             <c:if test="${sessionScope.HISTORY != null}">
+102:                 <c:forEach var="cartDTO" items="${sessionScope.HISTORY.values()}">
+103:                     
+104:                 </c:forEach>
+105:                 <div class="alert alert-secondary order" role="alert">
+
+
+Stacktrace:
+28/Oct/2020 20:08:20,947- ERROR CartDAO: getHistory(): com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'discountCode'.
+28/Oct/2020 20:09:27,201- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 108
+
+105:                             <div class="col-6">
+106:                                 <h5 class="alert-heading">Order ID: ${cartDTO.id}</h5>
+107:                                 <h5 class="alert-heading">Check in: ${cartDTO.arriveDate}</h5>
+108:                                 <h5 class="alert-heading">Discount code: ${cartDTO.discountCode}</h5>
+109:                             </div>
+110:                             <div class="col-6">
+111:                                 <h5></h5>
+
+
+Stacktrace:
+29/Oct/2020 18:21:16,177- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:21:26,175- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:21:26,178- ERROR SearchHistoryServlet: java.lang.NullPointerException
+29/Oct/2020 18:23:32,428- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:24:12,742- ERROR SearchHistoryServlet: java.lang.NullPointerException
+29/Oct/2020 18:24:29,036- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:24:32,420- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:24:32,947- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:35:01,026- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:35:03,576- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:35:06,146- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:35:11,793- ERROR SearchHistoryServlet: java.lang.IllegalArgumentException
+29/Oct/2020 18:40:40,049- ERROR CartDAO: searchHistory(): com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near 'orderID'.
+29/Oct/2020 18:54:21,188- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 112
+
+109:                                 <h5 class="alert-heading">Booking date ${cartDTO.bookingDate}</h5>
+110:                             </div>
+111:                             <div class="col-6">
+112:                                 <c:if test="${sessionScope.HISTORY.status = 5}">
+113:                                     <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+114:                                         <span aria-hidden="true">&times;</span>
+115:                                     </a>
+
+
+Stacktrace:
+29/Oct/2020 18:54:24,004- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 112
+
+109:                                 <h5 class="alert-heading">Booking date ${cartDTO.bookingDate}</h5>
+110:                             </div>
+111:                             <div class="col-6">
+112:                                 <c:if test="${sessionScope.HISTORY.status = 5}">
+113:                                     <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+114:                                         <span aria-hidden="true">&times;</span>
+115:                                     </a>
+
+
+Stacktrace:
+29/Oct/2020 18:55:06,557- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 112
+
+109:                                 <h5 class="alert-heading">Booking date ${cartDTO.bookingDate}</h5>
+110:                             </div>
+111:                             <div class="col-6">
+112:                                 <c:if test="${sessionScope.HISTORY.status = 5}">
+113:                                     <a type="button" class="close" data-dismiss="modal" aria-label="Close" href="delete?id=${cartDTO.id}">
+114:                                         <span aria-hidden="true">&times;</span>
+115:                                     </a>
+
+
+Stacktrace:
+29/Oct/2020 18:55:27,325- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 112
+
+109:                                 <h5 class="alert-heading">Booking date ${cartDTO.bookingDate}</h5>
+110:                             </div>
+111:                             <div class="col-6">
+112:                                 <c:if test="${sessionScope.HISTORY.status == 5}">
+113:                                     <a type="button" class="close" data-dismiss="modal" aria-label="Close" href="delete?id=${cartDTO.id}">
+114:                                         <span aria-hidden="true">&times;</span>
+115:                                     </a>
+
+
+Stacktrace:
+29/Oct/2020 18:55:42,148- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 112
+
+109:                                 <h5 class="alert-heading">Booking date ${cartDTO.bookingDate}</h5>
+110:                             </div>
+111:                             <div class="col-6">
+112:                                 <c:if test="${sessionScope.HISTORY.status == 5}">
+113:                                     <a type="button" class="close" data-dismiss="modal" aria-label="Close" href="delete?id=${cartDTO.id}">
+114:                                         <span aria-hidden="true">&times;</span>
+115:                                     </a>
+
+
+Stacktrace:
+30/Oct/2020 10:43:10,223- ERROR DeleteServlet: java.util.ConcurrentModificationException
+30/Oct/2020 10:45:32,216- ERROR DeleteServlet: java.util.ConcurrentModificationException
+30/Oct/2020 10:46:54,032- ERROR DeleteServlet: java.util.ConcurrentModificationException
+30/Oct/2020 15:24:16,575- ERROR ResetServlet: java.lang.NullPointerException
+30/Oct/2020 15:24:44,603- ERROR ResetServlet: java.lang.NullPointerException
+30/Oct/2020 15:25:50,710- ERROR UserDAO: updatePassword(): com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '='.
+30/Oct/2020 15:32:40,025- ERROR ResetServlet: java.lang.NullPointerException
+30/Oct/2020 15:35:56,995- ERROR ResetServlet: java.lang.NullPointerException
+30/Oct/2020 17:17:54,607- ERROR FeedbackServlet: java.lang.NumberFormatException: null
+30/Oct/2020 17:19:19,602- ERROR FeedbackServlet: java.lang.NumberFormatException: null
+30/Oct/2020 17:20:13,778- ERROR FeedbackServlet: java.lang.NumberFormatException: null
+30/Oct/2020 17:22:14,879- ERROR FeedbackServlet: java.lang.NumberFormatException: For input string: ""
+31/Oct/2020 12:57:50,716- ERROR DispatcherFilter: Error in DispatcherFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /history.jsp at line 156
+
+153:                                     <th>Quantity</th>
+154:                                     <th>Price</th>
+155:                                     <th>Total</th>
+156:                                         <c:if test="${cartDTO.statusID == 7}">
+157:                                         <th></th>
+158:                                         </c:if>
+159: 
+
+
+Stacktrace:
+02/Nov/2020 21:23:36,485- ERROR ConfirmBookServlet: java.lang.NullPointerException
+02/Nov/2020 21:26:18,984- ERROR ConfirmBookServlet: java.lang.NullPointerException
+02/Nov/2020 21:36:23,773- ERROR SendingEmail: Error in confirmEmail: javax.mail.internet.AddressException: Illegal address in string ``''
+03/Nov/2020 10:45:49,718- ERROR ConfirmBookServlet: java.lang.NullPointerException
+03/Nov/2020 15:10:09,964- ERROR AuthenFilter: Error in AuthenFilter: org.apache.jasper.JasperException: An exception occurred processing JSP page /searchHistory.jsp at line 159
+
+156:                                 </tr>
+157:                             </thead>
+158:                             <tbody>
+159:                                 <c:forEach var="room" items="${sessionScope.SEARCH_HISTORY.cart.values()}" varStatus="count">
+160:                                     <tr>
+161:                                         <td>${count.count}</td>
+162:                                         <td>${room.hotelName}</td>
+
+
+Stacktrace:
+05/Nov/2020 08:13:55,221- ERROR HotelDAO: getList(): java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host localhost, port 1433 has failed. Error: "Connection refused: connect. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+05/Nov/2020 08:14:29,314- ERROR HotelDAO: getList(): java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host localhost, port 1433 has failed. Error: "Connection refused: connect. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+05/Nov/2020 08:14:49,867- ERROR HotelDAO: getList(): java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host localhost, port 1433 has failed. Error: "Connection refused: connect. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+05/Nov/2020 08:15:04,443- ERROR HotelDAO: getList(): java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host localhost, port 1433 has failed. Error: "Connection refused: connect. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
